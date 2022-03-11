@@ -60,12 +60,12 @@
     <Compile Include="Assets\Emploee.cs" />
     <Compile Include="Assets\ProjectCreationWindow.cs" />
     <Compile Include="Assets\Project.cs" />
+    <Compile Include="Assets\GameInit.cs" />
     <Compile Include="Assets\ProjectList.cs" />
     <Compile Include="Assets\ProjectListWindow.cs" />
     <Compile Include="Assets\Destroy.cs" />
     <Compile Include="Assets\Company.cs" />
     <Compile Include="Assets\ICard.cs" />
-    <Compile Include="Assets\GameInit.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
