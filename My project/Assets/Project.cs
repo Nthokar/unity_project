@@ -5,22 +5,15 @@ using UnityEngine.UI;
 
 namespace global
 {
-    public class Project : MonoBehaviour
+    public class Project
     {
         public string name { get; set; }
-        public Button addProjectBotton;
-        public Text text;
 
-        public Project (string name)
+        public Project ()
+        { }
+        public Project(string name)
         {
             this.name = name;
         }
-
-        public void AddPtoject()
-        {
-            text.text = text.text + name + "\n";
-        }
-
-
     }
 }

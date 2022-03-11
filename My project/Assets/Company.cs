@@ -9,6 +9,22 @@ namespace global
         public string name { get; }
         public int balance { get; private set; }
 
-        public List<Project> list;
+        public ProjectList projectList = new ProjectList();
+
+        public GameObject Template;
+
+        public void Start()
+        {
+
+        }
+        public void Update()
+        {
+            
+        }
+
+        public void CreateProject(Project project)
+        {
+            projectList.Add(project);
+        }
     }
 }
