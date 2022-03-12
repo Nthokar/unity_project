@@ -29,6 +29,10 @@ namespace global
                 {
                     lineArray[i] = new Line(Company.projectList[i], LineTemplate);
                     lineArray[i].Value = Company.projectList[i];
+                    var x = lineArray[i].instance.transform.position.x;
+                    var y = lineArray[i].instance.transform.position.y;
+                    var z = lineArray[i].instance.transform.position.z;
+                    lineArray[i].instance.transform.position = new Vector3(x, y - 60*i, z);
                 }
                 if (Company.projectList[i] != lineArray[i].Value)
                 {

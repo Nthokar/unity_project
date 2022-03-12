@@ -33,5 +33,10 @@ namespace global
         {
             list.Add(project);
         }
+
+        public void Sort()
+        {
+            list.Sort();
+        }
     }
 }
