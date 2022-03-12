@@ -56,16 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Line.cs" />
-    <Compile Include="Assets\Emploee.cs" />
-    <Compile Include="Assets\ProjectCreationWindow.cs" />
-    <Compile Include="Assets\Project.cs" />
-    <Compile Include="Assets\ProjectList.cs" />
-    <Compile Include="Assets\ProjectListWindow.cs" />
-    <Compile Include="Assets\Destroy.cs" />
-    <Compile Include="Assets\Company.cs" />
-    <Compile Include="Assets\ICard.cs" />
-    <Compile Include="Assets\GameInit.cs" />
+    <Compile Include="Assets\Code\Line.cs" />
+    <Compile Include="Assets\Code\Emploee.cs" />
+    <Compile Include="Assets\Code\ProjectCreationWindow.cs" />
+    <Compile Include="Assets\Code\Project.cs" />
+    <Compile Include="Assets\Code\GameInit.cs" />
+    <Compile Include="Assets\Code\ProjectList.cs" />
+    <Compile Include="Assets\Code\ProjectListWindow.cs" />
+    <Compile Include="Assets\Code\Destroy.cs" />
+    <Compile Include="Assets\Code\Company.cs" />
+    <Compile Include="Assets\Code\ICard.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
