@@ -89,7 +89,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6766485760896240983}
   - component: {fileID: 6766485760896240976}
-  - component: {fileID: 6766485760896240977}
+  - component: {fileID: 7702919603784517121}
   - component: {fileID: 6766485760896240982}
   m_Layer: 5
   m_Name: addProjectInWindowB
@@ -126,7 +126,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6766485760896240980}
   m_CullTransparentMesh: 1
---- !u!114 &6766485760896240977
+--- !u!114 &7702919603784517121
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -196,7 +196,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 6766485760896240977}
+  m_TargetGraphic: {fileID: 7702919603784517121}
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
