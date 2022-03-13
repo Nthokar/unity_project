@@ -47,7 +47,7 @@ namespace global
         {
             Value = project;
             textField = template.GetComponentInChildren<Text>();
-            textField.text = Value.name;
+            textField.text = Value.Name;
             _parent = GameObject.Find("ProjectListWindow");
             instance = Instantiate(template);
             instance.transform.parent = _parent.transform;

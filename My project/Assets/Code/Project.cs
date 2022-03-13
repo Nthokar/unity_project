@@ -7,13 +7,16 @@ namespace global
 {
     public class Project
     {
-        public string name { get; set; }
+        public string Status;
+
+        public string Name { get; set; }
 
         public Project ()
         { }
         public Project(string name)
         {
-            this.name = name;
+            this.Name = name;
+            Status = "development";
         }
 
         //public void Equals()

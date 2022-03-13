@@ -66,6 +66,8 @@
     <Compile Include="Assets\Code\Destroy.cs" />
     <Compile Include="Assets\Code\Company.cs" />
     <Compile Include="Assets\Code\ICard.cs" />
+    <Compile Include="Assets\Code\PopUpWindow.cs" />
+    <Compile Include="Assets\Code\ProjectInfoWindow.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

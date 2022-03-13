@@ -39,7 +39,7 @@ namespace global
                     lineArray[i] = new Line(Company.projectList[i]);
                     lineArray[i].Value = Company.projectList[i];
                 }
-            }
+             }
         }
     }
 }
