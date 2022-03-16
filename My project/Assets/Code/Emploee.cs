@@ -3,15 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Emploee : MonoBehaviour
+namespace global
 {
-    public string firstName { get; set; }
-    public string lastName { get; set; }
-    public int salary { get; set; }
+    public class Emploee : MonoBehaviour
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
 
-    //public void AnimationWork()
-    //public static void WriteXML()
+        public int Salary { get; set; }
+        private int DevPointsPerStep = 1;
 
-    public Emploee()
-    { }
+        public int GetDevPoints()
+        {
+            return DevPointsPerStep;
+        }
+
+        //public void AnimationWork()
+        //public static void WriteXML()
+
+        public Emploee()
+        { }
+
+        public Emploee(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+    }
 }

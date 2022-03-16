@@ -11,7 +11,7 @@ namespace global
 
         public void CreateProject()
         {
-            Player.GetComponent<Company>().CreateProject(new Project(inputField.text));
+            GameObject.Find("Player").GetComponent<Company>().CreateProject(new Project(inputField.text));
         }
     }
 }
