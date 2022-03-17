@@ -1,17 +1,33 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Emploee : MonoBehaviour
+namespace global
 {
-    public string firstName { get; set; }
-    public string lastName { get; set; }
-    public int salary { get; set; }
+    public class Emploee : MonoBehaviour
+    {
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
 
-    //public void AnimationWork()
-    //public static void WriteXML()
+        public int level;
 
-    public Emploee()
-    { }
+        public int Salary { get; private set; }
+        private int _devPointsPerStep = 1;
+
+        public int GetDevPoints()
+        {
+            return _devPointsPerStep;
+        }
+
+        //public void AnimationWork()
+        //public static void WriteXML()
+
+        public Emploee()
+        { }
+
+        public Emploee(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+    }
 }

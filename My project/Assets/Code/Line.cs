@@ -11,6 +11,7 @@ namespace global
         public bool isOnScreen;
         public Text textField;
         public GameObject instance;
+        public bool IsOnScreen;
 
         private GameObject _parent;
 
@@ -20,6 +21,14 @@ namespace global
             var line = (Line)obj;
             return this.Value.Equals(line.Value);
 
+        }
+
+        public override int GetHashCode()
+        {
+            int hashCode = -823477900;
+            hashCode=hashCode*-1521134295+base.GetHashCode();
+            hashCode=hashCode*-1521134295+EqualityComparer<GameObject>.Default.GetHashCode(_parent);
+            return hashCode;
         }
 
         public static bool operator ==(Line line1, Line line2)
@@ -46,13 +55,20 @@ namespace global
         public Line(Project project, GameObject template)
         {
             Value = project;
-            textField = template.GetComponent<Text>();
-            textField.text = Value.name;
+            textField = template.GetComponentInChildren<Text>();
+            textField.text = Value.Name;
             _parent = GameObject.Find("ProjectListWindow");
             instance = Instantiate(template);
             instance.transform.parent = _parent.transform;
+            IsOnScreen = true;
 
         }
 
+        public void DestroyIfStatus(string status)
+        {
+            if (this.Value.Status == status)
+                Destroy(instance);
+              
+        }
     }
 }
