@@ -1,11 +1,9 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace global
 {
     public class Timer : MonoBehaviour
     {
-        public Action action;
         public int Year = 2000;
 
         private int _mounth;
@@ -13,6 +11,7 @@ namespace global
         public void IncreseMounth()
         {
             _mounth++;
+            TimeManager.SendNewMonth();
             if (_mounth == 13)
             {
                 _mounth = 1;

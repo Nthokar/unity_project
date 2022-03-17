@@ -31,6 +31,11 @@ namespace global
             Status = "development";
         }
 
+        public void AddEmploee(Emploee emploee)
+        {
+            Employees.Add(emploee);
+        }
+
         //ћожно оптимизировать посредству единоразового расчета прироста очков за шаг
         private void DoStep()
         {
@@ -47,7 +52,7 @@ namespace global
             if (DevPointsFilled < DevPointsNecessary && Status != "relese")
             {
                 DoStep();
-                Debug.Log(DevPointsFilled);
+                Debug.Log("devPointsFilled: " + DevPointsFilled.ToString());
             }
             else
             {

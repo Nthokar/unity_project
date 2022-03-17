@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
@@ -7,15 +5,17 @@ namespace global
 {
     public class Emploee : MonoBehaviour
     {
-        public string FirstName { get; set; }
-        public string LastName { get; set; }
+        public string FirstName { get; private set; }
+        public string LastName { get; private set; }
 
-        public int Salary { get; set; }
-        private int DevPointsPerStep = 1;
+        public int level;
+
+        public int Salary { get; private set; }
+        private int _devPointsPerStep = 1;
 
         public int GetDevPoints()
         {
-            return DevPointsPerStep;
+            return _devPointsPerStep;
         }
 
         //public void AnimationWork()

@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +17,11 @@ namespace global
             Projects = new ProjectList();
             Emploees = new List<Emploee>();
             TimeManager.OnNewDay += DevelopAllProjects;
+        }
+
+        public void OnDestroy()
+        {
+            if (TimeManager.OnNewDay != null)   TimeManager.OnNewDay -= DevelopAllProjects;
         }
         //public void FixedUpdate()
         //{
@@ -46,6 +50,11 @@ namespace global
         {
             project.Employees.Add(GameObject.Find("Steve(Emploee)").GetComponent<Emploee>());
             Projects.Add(project);
+        }
+
+        public void HireEmploee(Emploee emploee)
+        {
+            Emploees.Add(emploee);
         }
     }
 }
